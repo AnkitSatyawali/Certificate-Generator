@@ -1,0 +1,51 @@
+<div class="main" *ngIf="!loader">
+			<div class="steps">
+				<div class="step">
+					<div class="circle ticked">
+						1
+					</div>
+					<div class="content backlink" [routerLink]="['/design']">
+						Choose Design
+					</div>
+				</div>
+				<div class="step pl">
+					<div class="circle ticked">
+						2
+					</div>
+					<div class="content backlink" [routerLink]="['/edit-template']">
+						Edit Certificate
+					</div>
+				</div>
+				<div class="step pl">
+					<div class="circle ticked">
+						3
+					</div>
+					<div class="content bd">
+						Send Certificate
+					</div>
+				</div>
+			</div>
+			<div class="designs">
+				<div class="heading">Edit the recipient email id :</div>
+				<div class="inner-content">
+					<div id="template">
+						<img [src]="certificate.image" class="editTemplate">
+						<p class="centered">{{certificate.name}}</p>
+					</div>
+					<form class="form" #nameform="ngForm" >
+						<mat-form-field appearance="outline">
+                		<mat-label>Recipient Email Id</mat-label>
+                		<input matInput placeholder="Ex: ankit12345@gmail.com" [formControl]="email" required>
+                		<mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+        				</mat-form-field>
+        				<div class="submitbtn">
+        				<button class="next" mat-raised-button [disabled]="email.invalid"  (click)="sent()">SEND</button>
+        				</div>
+					</form>
+					
+				</div>
+			</div>
+			
+</div>
+<div class="loader" *ngIf="loader">
+<div class="lds-ripple" *ngIf="loader"><div></div><div></div></div></div>

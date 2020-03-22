@@ -1,0 +1,49 @@
+<div class="main" *ngIf="!loader">
+			<div class="steps">
+				<div class="step">
+					<div class="circle ticked">
+						1
+					</div>
+					<div class="content backlink" [routerLink]="['/design']">
+						Choose Design
+					</div>
+				</div>
+				<div class="step pl">
+					<div class="circle ticked">
+						2
+					</div>
+					<div class="content bd">
+						Edit Certificate
+					</div>
+				</div>
+				<div class="step pl">
+					<div class="circle">
+						3
+					</div>
+					<div class="content">
+						Send Certificate
+					</div>
+				</div>
+			</div>
+			<div class="designs">
+				<div class="heading">Edit the recipient name :</div>
+				<div class="inner-content">
+					<form class="form" #nameform="ngForm">
+						<mat-form-field appearance="outline">
+                		<mat-label>Recipient Name</mat-label>
+                		<input matInput #name maxlength="20" name="recipientName" [(ngModel)]="recipientName" type="text" placeholder="Ex: Ankit Satyawali" required>
+                		<mat-hint align="end">{{name.value.length}} /20</mat-hint>
+                		<mat-error>Name field can't be empty</mat-error>
+        				</mat-form-field>
+        				<button class="next" mat-raised-button [disabled]="nameform.invalid" (click)="onSubmit(nameform)" >NEXT</button>
+					</form>
+					<div class="template" id="pl">
+						<img [src]="imageurl" class="editTemplate">
+						<p class="centered">{{recipientName}}</p>
+					</div>
+				</div>
+			</div>
+			
+</div>
+<div class="loader" *ngIf="loader">
+<div class="lds-ripple" *ngIf="loader"><div></div><div></div></div></div>

@@ -1,0 +1,114 @@
+.main{
+	width:100%;
+	background-color: #4587F4;
+	height:100vh;
+	animation: fadeIn 1s;
+}
+.check{
+	width:100%;
+	text-align: center;
+	padding-top:30vh;
+	animation:fadeInDown 1s; 
+}
+.fas{
+	font-size: 5vw;
+	color:#46f276;
+}
+.content{
+	font-family: monospace;
+    color: white;
+    font-size: 2.3vw;
+    text-align: center;
+    padding-top: 5vh;
+    animation:fadeInUp 1s; 
+}
+button{
+	background-color: #FEA900;
+    border: none;
+    font-size: 1.3rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    border-radius: 10px;
+    color:white;
+    font-weight: bold;
+}
+button:hover{
+    border: 2px solid #FEA900;
+    color:#FEA900;
+    font-weight: bold;
+    background-color: white;
+    cursor:pointer;
+}
+button:focus{
+	outline:none;
+}
+.button{
+	text-align: center;
+	padding-top:5vh;
+	animation:fadeInUp 1s; 
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.fadeIn {
+  -webkit-animation-name: fadeIn;
+  animation-name: fadeIn;
+}
+@media only screen and (max-width: 620px)
+{
+  .content{
+    font-size: 4vw;
+  }
+  button{
+    font-size: 3vw
+  }
+  .fas{
+    font-size: 8vw
+
+  }
+}

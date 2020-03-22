@@ -1,0 +1,167 @@
+.main{
+	width: 100%;
+}
+.steps{
+	width:95%;
+	margin:0 auto;
+	display: flex;
+	padding-top:2rem;
+	padding-bottom: 2rem;
+}
+.step{
+	width:33.3%;
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	justify-content: center;
+}
+.pl{
+	margin-left: 5%;
+}
+.bd{
+	font-weight: bold
+}
+
+.circle{
+	height:2.5rem;
+	width:2.5rem;
+	line-height: 2.5rem;
+	background-color: yellow;
+	border-radius:50%;
+	text-align: center;
+	color:#FEA900;
+	font-weight: bold
+}
+.ticked{
+	background-color: #10ff00;
+}
+.content{
+	padding-left: 1rem;
+	color:#04d1e8;
+	font-size: 1.5vw;
+	font-weight: medium;
+	
+	padding-top: 0.7rem;
+	font-family: monospace;
+}
+.designs{
+	margin:0px auto;
+	width:80%;
+}
+.heading{
+	margin-top: 1rem;
+	font-size: 2.5vw;
+	font-weight: bold;
+	font-family: monospace;
+	color:#FEA900;
+}
+.designs_img{
+	margin:0 auto;
+	width:100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 1rem;
+}
+.template{
+	margin-top:2rem;
+}
+.design_temp{
+	width:100%;
+	height:40vh;
+	overflow: hidden;
+}
+.design_temp>img{
+	height:100%;
+	width:100%;
+	overflow: hidden;
+	transform: scale(1.3);
+	transition: transform 2s, filter 1.5s ease-in-out;
+  transform-origin: center center;
+  filter: brightness(60%);
+}
+.design_temp>img:hover{
+	filter: brightness(100%);
+  transform: scale(1);
+  cursor:pointer;
+}
+.design_cont{
+	text-align: center;
+	font-family: monospace;
+	font-weight: bold;
+	font-size: 1.2rem;
+	margin-top: 0.5rem;
+	color:#FEA900;
+}
+.coming{
+	text-align: center;
+	font-size: 1.3rem;
+	color:#04d1e8;
+	font-family: monospace;
+	font-weight: medium;
+	margin-top: 3rem;
+}
+@media only screen and (max-width:1200px)
+{
+	.design_temp{
+		height:24vh;
+	}
+}
+@media only screen and (max-width:850px)
+{
+	.designs{
+		width: 90%;
+	}
+	
+}
+@media only screen and (max-width:750px)
+{
+	.circle{
+		width:1.5rem;
+		height:1.5rem;
+		line-height: 1.5rem;
+	}
+	.content{
+		padding-top:0.4rem;
+	}
+}
+@media only screen and (max-width:650px)
+{
+	.designs_img{
+		margin:0 auto;
+		width:100%;
+		display: block;
+	}
+	.template{
+		width:100%;
+	}
+	.design_temp{
+		width:80%;
+		height:30vh;
+		margin:0px auto;
+	}
+	.circle{
+		width:1.5rem;
+		height:1.5rem;
+		line-height: 1.5rem;
+		font-size: 2vw;
+	}
+	.content{
+		padding-top:0.4rem;
+		font-size: 2vw;
+	}
+	.heading{
+		font-size: 3.5vw
+	}
+}
+@media only screen and (max-width:430px)
+{
+	.design_temp{
+		width:95%;
+		height:30vh;
+	}
+	.content{
+		padding-left: 0.3rem;
+		font-size: 2.5vw
+	}
+
+}

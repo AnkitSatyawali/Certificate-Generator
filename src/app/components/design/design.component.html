@@ -1,0 +1,40 @@
+<div class="main">
+			<div class="steps">
+				<div class="step">
+					<div class="circle ticked">
+						1
+					</div>
+					<div class="content bd">
+						Choose Design
+					</div>
+				</div>
+				<div class="step pl">
+					<div class="circle">
+						2
+					</div>
+					<div class="content">
+						Edit Certificate
+					</div>
+				</div>
+				<div class="step pl">
+					<div class="circle">
+						3
+					</div>
+					<div class="content">
+						Send Certificate
+					</div>
+				</div>
+			</div>
+			<div class="designs">
+				<div class="heading">Select a certificate design :</div>
+				<div class="designs_img">
+					<div class="template" *ngFor="let design of designs">
+						<div class="design_temp" [routerLink]="['/edit-template']" (click)="templateSelected(design.img)">
+							<img [src]="design.img">
+						</div>
+						<div class="design_cont">{{design.name}}</div>
+					</div>
+				</div>
+				<div class="coming">New designs coming soon........</div>
+			</div>
+		</div>

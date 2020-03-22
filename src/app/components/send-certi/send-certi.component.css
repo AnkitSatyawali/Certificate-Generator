@@ -1,0 +1,225 @@
+.main{
+	width: 100%;
+}
+.steps{
+	width:95%;
+	margin:0 auto;
+	display: flex;
+	padding-top:2rem;
+	padding-bottom: 2rem;
+}
+.step{
+	width:30%;
+	display: flex;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	justify-content: center;
+}
+.pl{
+	margin-left: 5%;
+}
+.bd{
+	font-weight: bold
+}
+
+.circle{
+	height:2.5rem;
+	width:2.5rem;
+	line-height: 2.5rem;
+	background-color: yellow;
+	border-radius:50%;
+	text-align: center;
+	color:#FEA900;
+	font-weight: bold
+}
+.ticked{
+	background-color: #10ff00;
+}
+.content{
+	padding-left: 1rem;
+	color:#04d1e8;
+	font-size: 1.5vw;
+	font-weight: medium;
+	padding-top: 0.7rem;
+	font-family: monospace;
+}
+.backlink:hover{
+	cursor: pointer;
+	outline: none
+}.designs{
+	margin:0 auto;
+	width:80%;
+}
+.heading{
+	margin-top: 1rem;
+	font-size: 2.5vw;
+	font-weight: bold;
+	font-family: monospace;
+	color:#FEA900;
+}
+.form{
+	margin-top: 2rem;
+}
+.label{
+	font-size: 1.5vw;
+	font-weight: medium;
+	color:grey;
+}
+mat-form-field{
+	margin-top: 1rem;
+	width:100%;
+}
+.inner-content{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 2rem;
+}
+#template{
+	/*height:55vh;*/
+	position: relative;
+	margin-top: 2rem;
+}
+.editTemplate{
+	height:100%;
+	width:100%;
+}
+.next{
+	width:30%;
+	margin:0px auto;
+	padding:0.7rem;
+	border:none;
+	color:white;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 1rem;
+	font-size: 1.5vw;
+	border-radius: 15px;
+	background-color:#04d1e8; 
+	border:none;
+}
+.next:hover{
+	border: 2px solid #04d1e8;
+	color:#04d1e8;
+	background-color: white;
+}
+.next:focus{
+	outline:none;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.5rem;
+}
+.submitbtn{
+	width:100%;
+	text-align: center;
+}
+.lds-ripple {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  top:40%;
+}
+.lds-ripple div {
+  position: absolute;
+  border: 7px solid chartreuse;
+  opacity: 1;
+  border-radius: 50%;
+  animation: lds-ripple 1s cubic-bezier(0, 0.2, 0.8, 1) infinite;
+}
+.lds-ripple div:nth-child(2) {
+  animation-delay: -0.5s;
+}
+@keyframes lds-ripple {
+  0% {
+    top: 36px;
+    left: 36px;
+    width: 0;
+    height: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 0px;
+    left: 0px;
+    width: 72px;
+    height: 72px;
+    opacity: 0;
+  }
+}
+.loader{
+	    width: 100%;
+    text-align: center;
+    position: relative;
+    height: 100vh;
+}
+@media only screen and (max-width: 950px)
+{
+	.designs{
+	
+	width:90%;
+	}
+}
+@media only screen and (max-width:750px)
+{
+	.circle{
+		width:1.5rem;
+		height:1.5rem;
+		line-height: 1.5rem;
+	}
+	.content{
+		padding-top:0.4rem;
+	}
+}
+@media only screen and (max-width: 740px)
+{
+	.inner-content{
+		display: block;
+	}
+	.form{
+		text-align:center;
+	}
+	.next{
+		margin-top: 0;
+	}
+	.template{
+		margin-top: 1rem;
+		height:auto;
+	}
+	.editTemplate{
+		height:auto;
+	}
+	.next{
+		padding:0;
+		font-size: 4vw
+	}
+	.centered{
+		font-size: 4.3vw;
+		top:41%;
+	}
+}
+@media only screen and (max-width: 650px)
+{
+	.circle{
+		width:1.5rem;
+		height:1.5rem;
+		line-height: 1.5rem;
+		font-size: 2vw;
+	}
+	.content{
+		padding-top:0.4rem;
+		font-size: 2vw;
+	}
+	.heading{
+		font-size: 3.5vw
+	}
+}
+@media only screen and (max-width: 430px)
+{
+	.content{
+		padding-left: 0.3rem;
+		font-size: 2.5vw
+	}
+}
