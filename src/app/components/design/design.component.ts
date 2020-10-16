@@ -19,6 +19,14 @@ designs = [
 {
 	name:"Designer Reward",
 	img:"../../../assets/designer2.png"
+},
+{
+	name:"2020 Experiment",
+	img:"../../../assets/2020experiment1.png"
+},
+{
+	name:"2021 Invention",
+	img:"../../../assets/2021invention.png"
 }
 ];
   constructor(private router: Router,private notifyService : NotifyService) { }
