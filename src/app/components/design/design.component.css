@@ -100,11 +100,12 @@
 	font-weight: medium;
 	margin-top: 3rem;
 }
-.newName{
+.navbar{
 	font-size: 2rem;
 	text-align: center;
 	font-family: sans-serif;
 }
+
 @media only screen and (max-width:1200px)
 {
 	.design_temp{
