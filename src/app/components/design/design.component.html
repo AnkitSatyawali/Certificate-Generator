@@ -31,7 +31,6 @@
 					<div class="template" *ngFor="let design of designs">
 						<div class="design_temp" [routerLink]="['/edit-template']" (click)="templateSelected(design.img)">
 							<img [src]="design.img">
-							<div class="newName">{{desing.name}}</div>
 						</div>
 						<div class="design_cont">{{design.name}}</div>
 					</div>
