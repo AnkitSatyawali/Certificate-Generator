@@ -38,10 +38,16 @@ recipientName="";
   // Few necessary setting options
   var imgWidth = 208;
   var pageHeight = 295;
+  let obj = {
+    image:this.imageurl,
+    name: form.value.recipientName
+  };
+  console.log(obj);
+  this.notifyService.saveCertificate(obj);
+  var data = document.getElementById('pl');
+  console.log(data); 
   var imgHeight = canvas.height * imgWidth / canvas.width;
   var heightLeft = imgHeight;
-  console.log(data); 
-
   const contentDataURL = canvas.toDataURL('image/png')
    console.log(contentDataURL)
    this.notifyService.uploadCertificate(contentDataURL).subscribe(d => {
